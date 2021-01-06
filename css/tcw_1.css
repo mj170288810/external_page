@@ -610,21 +610,24 @@ A.btn_green:hover {
 }
 
 #header_bar{
-    background:#FFF;
+    background:#e1e1e1;
     border-bottom:1px solid #CDCBBE;
 }
 #header_bar_inner{
-    width:980px;
-    margin:0 auto;
-    font-size:12px;
+    width:100%;
+    /*margin:0 auto;*/
+    font-size:16px;
+    font-weight: bold;
     line-height:30px;
     height:30px;
     position:relative;
+    margin-left: 470px;
 }
 #header_bar_inner #header_links{
     position:absolute;
     right:0;
     bottom:0;
+    margin-right: 960px;
 }
 #bobo {
     width:auto;
@@ -647,4 +650,17 @@ A.btn_green:hover {
 #filterTable td{
     border:1px #dbe2cb solid;
     padding:4px 4px 4px 10px;
+}
+#navi .b{
+    background: rgb(47,114,185);
+}
+#header_bar_inner span:nth-child(1){
+    color: rgb(47,114,185);
+}
+
+.btn_green{
+    background: rgb(47,114,185)!important;
+}
+#header{
+    padding-bottom: 15px;
 }
