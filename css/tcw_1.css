@@ -610,24 +610,26 @@ A.btn_green:hover {
 }
 
 #header_bar{
-    background:#e1e1e1;
+    background:#fffff7;
     border-bottom:1px solid #CDCBBE;
+    padding-top: 23px;
 }
 #header_bar_inner{
     width:100%;
     /*margin:0 auto;*/
-    font-size:16px;
+    font-size:20px;
     font-weight: bold;
     line-height:30px;
+    font-family: 微軟正黑體;
     height:30px;
     position:relative;
-    margin-left: 470px;
+    margin-left: 220px;
 }
 #header_bar_inner #header_links{
     position:absolute;
     right:0;
     bottom:0;
-    margin-right: 960px;
+    margin-right: 460px;
 }
 #bobo {
     width:auto;
@@ -662,5 +664,26 @@ A.btn_green:hover {
     background: rgb(47,114,185)!important;
 }
 #header{
-    padding-bottom: 15px;
+     padding-bottom: 15px;
+ }
+#header,#navi,#container{
+    width: 1500px!important;
+    /*background: #000099;*/
+}
+#subfooter,#subheader,#content{
+    width: 97%!important;
+}
+body{
+    background: #d4e6f7!important;
+}
+.spar{
+    background: #bbcff6!important;
+}
+
+#header_bar_inner{
+    height: 33px;
+}
+#header_links a{
+    font-size:15px;
+    font-family: 宋体;
 }
