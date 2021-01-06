@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=gb2312" http-equiv="Content-Type"/>
+    <title>用户登陆</title>
+    <link href="css/2011.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<style>
+    #header {
+        position: relative;
+        height: 68px;
+    }
+    #header #header_location {
+        position: absolute;
+        left: 145px;
+        top: 25px;
+        padding: 0 10px;
+        border-left: 1px solid #C6C7B9;
+    }
+    #navi {
+        position: relative;
+        width:988px;
+        margin: 0 auto;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        background: url(img/headerbg_1.jpg) repeat-x left top;
+        overflow: hidden;
+    }
+    #navi .b a, #navi .b a:visited {
+        float: left;
+        display: block;
+        padding: 5px 12px 5px 10px;
+        color: #FFFFBB;
+        text-decoration: none;
+    }
+    #navi .b a:hover {
+        color: #ecec7f;
+
+    }
+    #navi .b a.actv, #navi .b a.actv:visited {
+        background: white;
+        color: black;
+    }
+
+    #header_bar{
+        background:#FFF;
+        border-bottom:1px solid #CDCBBE;
+    }
+    #header_bar_inner{
+        width:980px;
+        margin:0 auto;
+        font-size:12px;
+        line-height:30px;
+        height:30px;
+        position:relative;
+    }
+    #header_bar_inner #header_links{
+        position:absolute;
+        right:0;
+        bottom:0;
+    }
+</style>
+
+<DIV id=header_bar>
+    <DIV id=header_bar_inner align="left"><SPAN><font color="#ff0000">互联网服务就上四川省汇医联医药科技有限公司</font></SPAN>
+        <DIV id=header_links><SPAN id=hello>
+            <font color="red"><a href="login.html">登录</a></font>&nbsp;|&nbsp; <font color="red"><a href="register.html">注册</a></font>
+            </SPAN></DIV>
+    </DIV>
+</DIV>
+<DIV id=header align="left"><A id=logo title="用户登录" href="index.html" target=_self><IMG src="./img/logo.png" style="width: 200px;height: 90px;"> </A>
+
+    <DIV style="RIGHT: 0px; POSITION: absolute; TOP: 20px! important; HEIGHT: 30px; _right: -6px">
+        <DIV style="PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 7px; PADDING-TOP: 5px; BACKGROUND-COLOR: #e7e7ca; _padding: 5px 3px 6px 4px"><A
+                class=btn_green style="magin-right: 3px" href="login.html" rel=nofollow alt="免费发布信息">免费发布信息</A> <A class=btn_normal href="register.html" target=_self rel=nofollow>广告投放/置顶</A></DIV>
+    </DIV>
+</DIV>
+<!--header-->
+<DIV id=navi>
+    <DIV class=b>
+        <a href="index.html" target="_self">首页</a>
+
+
+
+
+        <A style="FONT-SIZE: 14px; FLOAT: right" href="javascript:;" rel=nofollow>会员中心</A>
+        <DIV class=blank></DIV>
+    </DIV>
+    <STYLE>
+    </STYLE>
+</DIV>
+
+<!-- 主体 -->
+<style>
+    #filterTable tr {
+        background: #effaea;
+    }
+    #filterTable {
+        border-collapse:collapse;
+    }
+    #filterTable td{
+        border:1px #dbe2cb solid;
+        padding:4px 4px 4px 10px;
+    }
+
+
+</style>
+
+<div id="container">
+
+    <div id="subheader">
+        <h1>登陆</h1>
+
+        <div class="block nohist">
+
+        </div>
+    </div>
+
+
+
+    <div id="content">
+        <div id="left">
+            <form method="post" action="member.php?act=act_login" class="form">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr class="row">
+                        <td width="120" align="right" valign="top"><span class="red">*</span>用 户 名：</td>
+                        <td><input type="text" maxlength="20" name="username" id="username" size="20" class="input" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><span class="red">*</span> 登录密码：</td>
+                        <td><input type="password" maxlength="20" name="password" id="password" size="20" class="input" value="" />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><span class="red">*</span> 问题验证：</td>
+                        <td><input type="text" maxlength="20" name="answer" id="answer" size="20" class="input" value="" />&nbsp;<input type="hidden" id="vid" name="vid" value=2 />
+
+                            问题：72-38=？&nbsp;</td>
+                        <td></td>
+                    </tr>
+
+
+                    <tr>
+                        <td align="right" valign="top">&nbsp;</td>
+                        <td colspan="2"><input type="hidden" name="refer" value="http://www.imemore.com/category.php?id=5" />
+                            <input type="button" id="submit" name="submit" value="点击登录" />&nbsp;&nbsp;
+
+                            <div class="blank10"></div>
+                            <div class="blank10"></div>
+                            如你未在本站注册过用户名，请<a href="register.html">点此注册</a>！
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="right">
+            <div class="descr">
+
+            </div>
+        </div><!--right-->
+
+        <div class="blank"></div>
+
+    </div>
+
+    <div id="subfooter"></div><!--subfooter-->
+
+</div><!--E:container-->
+<div class="phpmpslogin">
+    <!-- 页脚 -->
+<!--    <DIV class=nohist id=footer>-->
+<!--        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>-->
+<!--            <TBODY>-->
+<!--            <TR>-->
+<!--                <TD style="TEXT-ALIGN: left">-->
+
+
+<!--                    <BR>&copy;CopyRight <a href="index.html">互联网服务就上四川省汇医联医药科技有限公司</a>2008-2012 All Rights Reserved. 备案号：<a href="http://beian.miit.gov.cn/" target=_blank>蜀ICP备19030241号</a>-->
+<!--                    <DIV style="FLOAT: right">-->
+<!--                    </DIV>-->
+<!--                    <BR>-->
+<!--            </TR>-->
+<!--            </TBODY>-->
+<!--        </TABLE>-->
+<!--    </DIV>-->
+
+    <!-- 页脚 结束 -->
+</div>
+<script type="text/javascript">
+    $.validator("username")
+        .setRequired("请填写用户名。")
+        .setServerCharset("GBK")
+        .setStrlenType("byte")
+
+    $.validator("password")
+        .setRequired("请填写密码。")
+        .setServerCharset("gbk")
+        .setStrlenType("symbol")
+
+    $.validator("answer")
+        .setRequired("请填写问题验证。")
+        .setAjax("do.php?act=ver&vid="+$('#vid').val(), "回答不正确。");
+</script>
+</body>
+</html>

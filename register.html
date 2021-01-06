@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <title>快速会员注册系统</title>
+    <link href="css/2011.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<style>
+    #header {
+        position: relative;
+        height: 68px;
+    }
+    #header #header_location {
+        position: absolute;
+        left: 145px;
+        top: 25px;
+        padding: 0 10px;
+        border-left: 1px solid #C6C7B9;
+    }
+    #navi {
+        position: relative;
+        width:988px;
+        margin: 0 auto;
+        border-top: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        background: url(./img/headerbg_1.jpg) repeat-x left top;
+        overflow: hidden;
+    }
+    #navi .b a, #navi .b a:visited {
+        float: left;
+        display: block;
+        padding: 5px 12px 5px 10px;
+        color: #FFFFBB;
+        text-decoration: none;
+    }
+    #navi .b a:hover {
+        color: #ecec7f;
+
+    }
+    #navi .b a.actv, #navi .b a.actv:visited {
+        background: white;
+        color: black;
+    }
+`
+    #header_bar{
+        background:#FFF;
+        border-bottom:1px solid #CDCBBE;
+    }
+    #header_bar_inner{
+        width:980px;
+        margin:0 auto;
+        font-size:12px;
+        line-height:30px;
+        height:30px;
+        position:relative;
+    }
+    #header_bar_inner #header_links{
+        position:absolute;
+        right:0;
+        bottom:0;
+    }
+</style>
+
+
+
+
+
+<DIV id=header_bar>
+    <DIV id=header_bar_inner align="left"><SPAN><font color="#ff0000">互联网服务就上四川省汇医联医药科技有限公司</font></SPAN>
+        <DIV id=header_links><SPAN id=hello>
+            <font color="red"><a href="login.html">登录</a></font>&nbsp;|&nbsp; <font color="red"><a href="register.html">注册</a></font>
+            </SPAN></DIV>
+    </DIV>
+</DIV>
+<DIV id=header align="left"><A id=logo title="会员注册" href="index.html" target=_self><IMG src="./img/logo.png" style="width: 200px;height: 90px;"> </A>
+
+    <DIV style="RIGHT: 0px; POSITION: absolute; TOP: 20px! important; HEIGHT: 30px; _right: -6px">
+        <DIV style="PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 7px; PADDING-TOP: 5px; BACKGROUND-COLOR: #e7e7ca; _padding: 5px 3px 6px 4px"><A
+                class=btn_green style="magin-right: 3px" href="login.html" rel=nofollow alt="免费发布信息">免费发布信息</A> <A class=btn_normal href="register.html" target=_self rel=nofollow>广告投放/置顶</A></DIV>
+    </DIV>
+</DIV>
+<!--header-->
+<DIV id=navi>
+    <DIV class=b>
+        <a href="index.html" target="_self">首页</a>
+
+
+
+
+        <A style="FONT-SIZE: 14px; FLOAT: right" href="javascript:;" rel=nofollow>会员中心</A>
+        <DIV class=blank></DIV>
+    </DIV>
+    <STYLE>
+    </STYLE>
+</DIV>
+
+</div><!--navi-->
+
+
+<style>
+    #filterTable tr {
+        background: #effaea;
+    }
+    #filterTable {
+        border-collapse:collapse;
+    }
+    #filterTable td{
+        border:1px #dbe2cb solid;
+        padding:4px 4px 4px 10px;
+    }
+
+
+</style>
+
+<div id="container">
+
+    <div id="subheader">
+        <h1>注册</h1>
+
+        <div class="block nohist">
+            <div class="b" style="padding:15px 20px">
+                首先，<b>在汇医联平台可以不注册<a href="login.html">直接发布信息</a>！</b>那么，注册以后有什么不一样的地方？<br />
+                <ul style="list-style:disc;padding-left:18px;">
+                    <li>当发布的信息比较多的时候，注册后发布和管理信息都更方便一些。</li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- subheader -->
+
+    <div id="content">
+        <div id="left">
+            <form method="post" action="member.php" id="zhuceForm" onsubmit="return checkForm(this)" class="form">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr class="row">
+                        <td width="120" align="right" valign="top"><span class="red">*</span>用 户 名：</td>
+                        <td><input type="text" maxlength="20" name="username" id="username" size="20" class="input" value="" />&nbsp;4个字符以上</td>
+
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><span class="red">*</span> 登录密码：</td>
+                        <td><input type="password" maxlength="20" name="password" id="password" size="20" class="input" value="" />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><span class="red">*</span>重复密码：</td>
+                        <td><input type="password" maxlength="20" name="repassword" id="repassword" size="20" class="input" value="" /></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><span class="red">*</span> 电子邮件：</td>
+                        <td><input type="text" maxlength="20" name="email" id="email" size="20" class="input" value="" /></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><span class="red">*</span> 问题验证：</td>
+                        <td><input type="text" maxlength="20" name="answer" id="answer" size="20" class="input" value="" />&nbsp;<input type="hidden" id="vid" name="vid" value=2 />
+                            问题：72-38=？&nbsp;</td>
+                        <td></td>
+                    </tr>
+
+
+                    <tr>
+                        <td align="right" valign="top">&nbsp;</td>
+                        <td colspan="2"><input type="hidden" name="act" value="act_register">
+                            <input type="hidden" name="submit" value="1">
+                            <input type="button" name="submit" value="提交注册信息">&nbsp;&nbsp;
+
+                            <div class="blank10"></div>
+                            <div class="blank10"></div>
+                            如你已经注册，<a href="javascript:;" >点此登录</a>！
+<!--                            如你已经注册，<a href="member.php?act=login&refer=http://www.imemore.com/member.php?act=register" >点此登录</a>！-->
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="right">
+            <div class="descr">
+            </div>
+        </div><!--right-->
+        <div class="blank"></div>
+    </div>
+    <div id="subfooter"></div><!--subfooter-->
+</div><!--E:container-->
+<!-- 主体 结束 -->
+
+<!-- 页脚 -->
+<!--<DIV class=nohist id=footer>-->
+<!--    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>-->
+<!--        <TBODY>-->
+<!--        <TR>-->
+<!--            <TD style="TEXT-ALIGN: left">-->
+
+
+<!--                <BR>&copy;CopyRight <a href="index.html">成都月象网络科技有限公司</a>2008-2012 All Rights Reserved. 备案号：<a href="http://beian.miit.gov.cn/" target=_blank>蜀ICP备19030241号</a>-->
+<!--                <DIV style="FLOAT: right">-->
+<!--                </DIV>-->
+<!--                <BR>-->
+<!--        </TR>-->
+<!--        </TBODY>-->
+<!--    </TABLE>-->
+<!--</DIV>-->
+
+<!-- 页脚 结束 -->
+
+</div>
+<script type="text/javascript">
+    $.validator("username")
+        .setDefaultMsg("不超过8个汉字，或16个字符(数字，字母和下划线)。")
+        .setFocusMsg("不超过8个汉字，或16个字符(数字，字母和下划线)。")
+        .setRequired("请填写用户名。")
+        .setServerCharset("GBK")
+        .setStrlenType("byte")
+        .setMaxLength(16, "不超过8个汉字，或16个字符(数字，字母和下划线)。")
+        .setAjax("member.php?act=ajax&type=username", "此用户名已被注册，请另换一个。")
+        .setCallback(function(str){ return /^[\w|\u4E00-\u9FA5]*$/.test(str); }, "用户名仅可使用汉字、字母、数字或下划线。")
+        .setCallback(function(str){ return ! /^\d{11}$/.test(str); }, "用户名不能是11位数字，请另换一个");
+
+    $.validator("email")
+        .setDefaultMsg("请输入有效的电子邮箱，可用于登录您的帐户和找回密码。")
+        .setFocusMsg("请输入有效的电子邮箱，可用于登录您的帐户和找回密码。")
+        .setRequired("请填写电子邮箱。")
+        .setServerCharset("gbk")
+        .setStrlenType("symbol")
+        .setMaxLength(50, "邮箱格式错误")
+        .setRegexp(/^\w+((-|\.)\w+)*@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/, "电子邮箱格式不正确。", false)
+        .setAjax("member.php?act=ajax&type=email", "此电子邮箱已被注册，请另换一个。");
+
+    $.validator("password")
+        .setDefaultMsg("6至12个字符(数字，字母和下划线；字母区分大小写)。")
+        .setFocusMsg("6至12个字符(数字，字母和下划线；字母区分大小写)。")
+        .setRequired("请填写密码。")
+        .setRegexp(/^\w+$/, "密码只能由数字、字母和下划线组成。", false)
+        .setServerCharset("gbk")
+        .setStrlenType("symbol")
+        .setMinLength(6, "密码太短，最少为6位。")
+        .setMaxLength(12, "密码不应超过12个字符。")
+        .setCallback(is_complex_password, "您的密码太过简单，为保证安全请更换更复杂的密码。")
+        .setCompareField("!=", "username", "密码不能和用户名相同。");
+
+    $.validator("repassword")
+        .setDefaultMsg("6至12个字符(数字，字母和下划线；字母区分大小写)。")
+        .setFocusMsg("请输入一致密码。")
+        .setRequired("请再输入一遍密码。")
+        .setRegexp(/^\w+$/, "密码只能由数字、字母和下划线组成。", false)
+        .setServerCharset("gbk")
+        .setStrlenType("symbol")
+        .setMinLength(6, "密码太短，最少为6位。")
+        .setMaxLength(12, "密码不应超过12个字符。")
+        .setCompareField("==", "password", "两次输入的密码不一致。");
+
+    $.validator("answer")
+        .setRequired("请填写问题验证。")
+        .setAjax("do.php?act=ver&vid="+$('#vid').val(), "回答不正确。");
+</script>
+</body>
+</html>
