@@ -610,26 +610,26 @@ A.btn_green:hover {
 }
 
 #header_bar{
-    background:#fffff7;
+    background: rgb(239,250,234);
     border-bottom:1px solid #CDCBBE;
     padding-top: 23px;
 }
 #header_bar_inner{
     width:100%;
     /*margin:0 auto;*/
-    font-size:20px;
-    font-weight: bold;
+    font-size:22px;
+    font-weight: bolder;
     line-height:30px;
     font-family: 微軟正黑體;
     height:30px;
     position:relative;
-    margin-left: 220px;
+    margin-left: 400px;
 }
 #header_bar_inner #header_links{
     position:absolute;
     right:0;
     bottom:0;
-    margin-right: 460px;
+    margin-right: 866px;
 }
 #bobo {
     width:auto;
@@ -665,13 +665,14 @@ A.btn_green:hover {
 }
 #header{
      padding-bottom: 15px;
+    background: rgb(239,250,234);
  }
 #header,#navi,#container{
-    width: 1500px!important;
+    width: 100%!important;
     /*background: #000099;*/
 }
 #subfooter,#subheader,#content{
-    width: 97%!important;
+    width: 98%!important;
 }
 body{
     background: #d4e6f7!important;
